@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pg5.css">
+</head>
+<body>
+    <div class="s">
+        <label class="lo">logo</label>
+        <img src="clock_logo@2x.png" alt="" class="img1">
+        <div class="b2">
+            <p class="p"></p>
+            <p class="p1"></p>
+            <div class="p2">
+                Time
+            <div class="am0">
+            <img src="timeline@2x.jpg" alt="" class="am1"><span id="hours" class="M1"></span><span class="hrs">hrs</span>    
+            <img src="timeline@2x.jpg" alt="" class="am2"><span  id="minutes" class="M2">00</span><span class="min">mint</span><span>:</span> 
+            <img src="timeline@2x.jpg" alt="" class="am3"><span  id="seconds" class="M3">00</span><span class="sec">sec</span>
+            <img src="AM_svg@2x.jpg" alt="" class="am4"><span  id="session" class="M4">AM</span>
+        </div>   
+            </div>
+        </div>
+        </div>
+        <div class="b1">
+            <label class="icn">Icons</label>
+            <div class="h">
+                <img src="wake_up@2x.png" alt="" class="img2">
+            </div>
+            <div class="h0">
+                <img src="lunch_time@2x.png" alt="" class="img3">
+            
+            </div>
+            <div class="h1">
+                <img src="nap_time@2x.png" alt="" class="img4">
+            
+            </div>
+            <div class="h2">
+                <img src="https://th.bing.com/th/id/R.3ece35e1b0edcacc7729459e8a3f9e0d?rik=SjiTriCNyYd8OA&riu=http%3a%2f%2fclipart-library.com%2fnewhp%2f419-4196186_03-night-time-moon-clipart.png&ehk=PV%2be6GrmL8ucMX8OP2wZggYVobsMzQRAuF%2fp9k%2fG3vc%3d&risl=&pid=ImgRaw&r=0" alt="" class="img5"> 
+            </div>
+    </div><br>
+        <div class="igs">
+            <img src="Component 30 – 1@2x.png" alt="" class="lady">
+            <img src="Group 5183.svg" alt="" class="grp">
+            <img src="coffemug.png" alt="" class="coffe">
+            <img src="bed 5194.svg" alt="" class="bed">
+        </div>
+    <div class="tm">
+        <span class="tm1">8 AM - 9 AM</span><br>
+        <span class="tm2">9 AM - 10 AM</span><br>
+        <span class="tm3">10 AM - 11 AM</span><br>
+        <span class="tm4">11 AM - 12 PM</span>
+    </div>
+    <div class="para1">
+        <p>8 AM - 9 AM</p>
+        <p>9 AM - 10 AM</p>
+        <p>10 AM - 11 AM</p>
+        <p>11 AM - 12 PM</p>
+    </div>
+
+    <script>
+function getTime (){
+    let dateTime = new Date();
+    let hrs = dateTime.getHours();
+    let min = dateTime.getMinutes();
+    let sec = dateTime.getSeconds();
+    let session = document.getElementById('session');
+
+    if(hrs >= 12){
+        session.innerHTML='PM';
+    }
+    else{
+        session.innerHTML='AM';
+    }
+    
+    if(hrs > 12){
+        hrs = hrs -12;
+    }
+
+    if (hrs < 10){
+        hrs = '0' + hrs;
+    }
+
+
+    if (min < 10){
+        min = '0' + min ;
+    }
+
+
+    if (sec < 10){
+        sec = '0' + sec ;
+    }
+    
+
+    document.getElementById('hours').innerHTML = hrs;
+    document.getElementById('minutes').innerHTML = min;
+    document.getElementById('seconds').innerHTML = sec;
+}
+setInterval(getTime , 10);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
