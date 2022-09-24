@@ -14,31 +14,31 @@ function getTime (){
         session.innerHTML='AM';
     }
 
-    if(hrs >= 5 || hrs <= 11 && session=='AM'){
+if(hrs >= 05 || hrs <= 11 && session=='AM'){
         document.getElementById("lady").src = "Component 30 – 1@2x.png";
         document.getElementById("grab").innerText = "GRAB SOME HEALTHY BREAKFAST !!!";
         document.getElementById("good2").innerText = "GOOD MORNING !! WAKE UP !!";
     }
     
-    if( hrs >= 12 || hrs <= 4 && session == 'PM'){
+    if( hrs >= 12 || hrs <= 16 && session == 'PM'){
         document.getElementById("lady").src = "Group 5183.svg";
         document.getElementById("grab").innerText = "LET'S HAVE SOME LUNCH !!";
         document.getElementById("good2").innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP";
     }
     
-    if( hrs >= 4 || hrs <= 7 && session=='PM'){
+    if( hrs >= 16 || hrs <= 19 && session=='PM'){
         document.getElementById("lady").src = "coffemug.png";
         document.getElementById("grab").innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
         document.getElementById("good2").innerText = "GOOD EVENING !!";
     }
     
-    if( hrs >= 8 || hrs<= 11 && session=='PM'){
+    if( hrs >= 20 || hrs<= 23 && session=='PM'){
         document.getElementById("lady").src = "bed 5194.svg";
         document.getElementById("grab").innerText = "CLOSE YOUR EYES AND GO TO SLEEP"; 
         document.getElementById("good2").innerText =  "GOOD NIGHT !!";
     }
     
-    if( hrs >= 00 || hrs <= 5 && session == 'AM'){
+    if( hrs >= 24 || hrs <= 05 && session == 'AM'){
         document.getElementById("lady").src = "bed 5194.svg";
         document.getElementById("grab").innerText = "CLOSE YOUR EYES AND GO TO SLEEP"; 
         document.getElementById("good2").innerText =  "GOOD NIGHT !!";
