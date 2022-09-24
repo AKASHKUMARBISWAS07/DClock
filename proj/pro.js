@@ -14,7 +14,7 @@ function getTime (){
         session.innerHTML='AM';
     }
 
-if(hrs >= 05 || hrs <= 11 && session=='AM'){
+if(hrs >= 05 || hrs <= 12 && session=='AM'){
         document.getElementById("lady").src = "Component 30 – 1@2x.png";
         document.getElementById("grab").innerText = "GRAB SOME HEALTHY BREAKFAST !!!";
         document.getElementById("good2").innerText = "GOOD MORNING !! WAKE UP !!";
@@ -32,7 +32,7 @@ if(hrs >= 05 || hrs <= 11 && session=='AM'){
         document.getElementById("good2").innerText = "GOOD EVENING !!";
     }
     
-    if( hrs >= 20 || hrs<= 23 && session=='PM'){
+    if( hrs >= 19 || hrs<= 24 && session=='PM'){
         document.getElementById("lady").src = "bed 5194.svg";
         document.getElementById("grab").innerText = "CLOSE YOUR EYES AND GO TO SLEEP"; 
         document.getElementById("good2").innerText =  "GOOD NIGHT !!";
